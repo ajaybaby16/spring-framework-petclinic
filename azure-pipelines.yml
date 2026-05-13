@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'd2bca3fa-ac88-4371-af4d-6871380d1462'
 
   # Web app name
-  webAppName: 'petclinic-app-ajayb'
+  webAppName: 'ajaymyapps'
 
   # Environment name
-  environmentName: 'petclinic-app-ajayb'
+  environmentName: 'ajaymyapps'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -67,7 +67,7 @@ stages:
         deploy:
           steps:
           - task: AzureWebApp@1
-            displayName: 'Azure Web App Deploy: petclinic-app-ajayb'
+            displayName: 'Azure Web App Deploy: ajaymyapps'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
